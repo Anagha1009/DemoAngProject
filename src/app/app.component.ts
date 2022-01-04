@@ -38,4 +38,5 @@ export class AppComponent {
   }
 
   show = false;
+  color='blue';
 }

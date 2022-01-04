@@ -15,6 +15,13 @@
 <ng-template #elseblock>
     <h1>Hii there</h1>
 </ng-template>
+
+<div [ngSwitch]="color">
+    <h2 *ngSwitchCase="'red'">Red Color</h2>
+    <h2 *ngSwitchCase="'blue'">Blue Color</h2>
+    <h2 *ngSwitchCase="'violet'">Violet Color</h2>
+</div>
+
 <input type="text" [value]="name"/><br>
 <input type="text" value={{name}}/>
 <button (click)="getName()">Get Name</button>
