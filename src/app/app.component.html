@@ -22,6 +22,22 @@
     <h2 *ngSwitchCase="'violet'">Violet Color</h2>
 </div>
 
+<h4 *ngFor="let item of data">{{item}}</h4>
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Capital</td>
+        <td>Currency</td>
+        <td>Code</td>
+    </tr>
+    <tr *ngFor="let item of data1">
+        <td>{{item.name}}</td>
+        <td>{{item.capital}}</td>
+        <td>{{item.currency}}</td>
+        <td>{{item.code}}</td>
+    </tr>
+</table>
+<br><br>
 <input type="text" [value]="name"/><br>
 <input type="text" value={{name}}/>
 <button (click)="getName()">Get Name</button>

@@ -39,4 +39,21 @@ export class AppComponent {
 
   show = false;
   color='blue';
+  data=['India','Germany','UK','Australia']
+  data1=[{
+    name:'India',
+    capital:'Delhi',
+    code:'IND',
+    currency:'Rupees'
+  },{
+    name:'Australia',
+    capital:'Sydney',
+    code:'Aus',
+    currency:'AUD'
+  },{
+    name:'UK',
+    capital:'London',
+    code:'UK',
+    currency:'EURO'
+  }]
 }
