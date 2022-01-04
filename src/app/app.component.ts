@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { UsersdataService } from '../app/usersdata.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'DemoAngProject';
   name = "Anagha Thorat";
+
+  name1 = "";
+  constructor(private user: UsersdataService) {
+    console.warn(this.user.getData());
+    let data=this.user.getData();
+    this.name1 = data.name
+  }
 
   getId(id: any) {
     alert(id);
