@@ -9,51 +9,57 @@ export class AppComponent {
   title = 'DemoAngProject';
   name = "Anagha Thorat";
 
-  getId(id:any){
+  getId(id: any) {
     alert(id);
   }
 
-  getNumber(){
+  getNumber() {
     return 100;
   }
-  getName(){
+  getName() {
     alert(this.name);
   }
-  
-  obj={
-    name:"Anagha",
-    gender:"Female",
-    role:"Admin"
+
+  obj = {
+    name: "Anagha",
+    gender: "Female",
+    role: "Admin"
   }
 
-  arr=['Anagha','Rupali','Abhishek']
+  arr = ['Anagha', 'Rupali', 'Abhishek']
 
   a = 100;
   b = 300;
 
   siteURL = window.location.href;
 
-  myEvent(evt:any){
+  myEvent(evt: any) {
     console.log(evt);
   }
 
   show = false;
-  color='blue';
-  data=['India','Germany','UK','Australia']
-  data1=[{
-    name:'India',
-    capital:'Delhi',
-    code:'IND',
-    currency:'Rupees'
-  },{
-    name:'Australia',
-    capital:'Sydney',
-    code:'Aus',
-    currency:'AUD'
-  },{
-    name:'UK',
-    capital:'London',
-    code:'UK',
-    currency:'EURO'
+  color = 'blue';
+  data = ['India', 'Germany', 'UK', 'Australia']
+  data1 = [{
+    name: 'India',
+    capital: 'Delhi',
+    code: 'IND',
+    currency: 'Rupees'
+  }, {
+    name: 'Australia',
+    capital: 'Sydney',
+    code: 'Aus',
+    currency: 'AUD'
+  }, {
+    name: 'UK',
+    capital: 'London',
+    code: 'UK',
+    currency: 'EURO'
   }]
+
+
+  getUserValue(values: any) {
+    console.log(values);
+  }
+
 }
